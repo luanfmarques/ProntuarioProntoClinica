@@ -16,6 +16,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 header {
@@ -80,9 +87,35 @@ table {
   border-collapse: collapse;
 }
 
+th:nth-child(1), th:nth-child(3) {
+    width: 20%;
+}
+
 th,
 td {
     padding: 15px;
+}
+
+button {
+    position: absolute;
+    border: 0;
+    padding: 20px;
+    border-radius: 7px;
+    font-size: 22px;
+    bottom: 600px;
+    background: #3d3f95;
+    color: white;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px 4px #3333334d;
+}
+
+.printBtn {
+    left: 100px;
+}
+
+.resetBtn {
+    right: 100px;
+    background: #cc5454;
 }
 
 @media print {
@@ -90,6 +123,9 @@ td {
   select,
   textarea {
     border: 0 !important;
+  }
+  button {
+      display: none;
   }
   select::-ms-expand {
     display: none;
