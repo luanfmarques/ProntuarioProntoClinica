@@ -109,6 +109,10 @@ button {
     box-shadow: 3px 3px 8px 4px #3333334d;
 }
 
+button:active {
+    transform: translateY(3px);
+}
+
 .printBtn {
     left: 100px;
 }
