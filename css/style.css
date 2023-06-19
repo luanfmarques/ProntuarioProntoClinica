@@ -70,6 +70,10 @@ textarea {
   text-transform: uppercase;
 }
 
+.obsContainer {
+  width: 100%;
+}
+
 .obsContainer label {
     align-items: flex-start;
     font-size: 22px !important;
@@ -151,4 +155,18 @@ button:active {
     text-indent: 1px;
     text-overflow: "";
   }
+}
+
+.dnAndProtocoloWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.assPaciente{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: baseline;
 }

@@ -23,31 +23,39 @@
               <option value="" selected="true" disabled="disabled">
                 Escolha
               </option>
-              <option value="0">Bradesco</option>
-              <option value="1">OdontoPrev</option>
-              <option value="2">São Francisco</option>
-              <option value="3">Odonto System</option>
-              <option value="4">Amil</option>
-              <option value="5">Ipag</option>
-              <option value="6">Particular</option>
-              <option value="7">Soprevi</option>
-              <option value="8">Sind. Bancários</option>
-              <option value="9">Assurgs</option>
-              <option value="10">PAC</option>
-              <option value="11">Doctor Clin</option>
-              <option value="12">Sind. Radialista</option>
-              <option value="13">ASAPEG</option>
+              <option value="1">ASAPEG</option>
+              <option value="2">Assurgs</option>
+              <option value="3">Bradesco</option>
+              <option value="4">Doctor Clin</option>
+              <option value="5">Hapvida</option>
+              <option value="6">OdontoPrev</option>
+              <option value="7">Odonto System</option>
+              <option value="8">Particular</option>
+              <option value="9">Sind. Bancários</option>
+              <option value="10">Sind. Radialista</option>
             </select>
           </label>
-          <label for="dn" class="inputLabel">
-            DN:
-            <input
-              type="text"
-              id="dn"
-              oninput="mascara(this, 'data')"
-              placeholder="DD/MM/AAAA"
-            />
-          </label>
+          <div class="dnAndProtocoloWrapper">
+            <label for="dn" class="inputLabel">
+              DN:
+              <input
+                type="text"
+                id="dn"
+                oninput="mascara(this, 'data')"
+                placeholder="DD/MM/AAAA"
+              />
+            </label>
+            <label for="protocolo" class="inputLabel">
+              Protocolo:
+              <select name="protocolo" id="protocolo">
+                <option value="" selected="true" disabled="disabled">
+                  Escolha
+                </option>
+                <option value="1">Azul</option>
+                <option value="2">Verde</option>
+              </select>
+            </label>
+          </div>
           <label for="n" class="inputLabel width100">
             Nº:
             <input id="n" type="text" />
@@ -85,10 +93,16 @@
           </label> -->
         </div>
       </header>
-      <div class="obsContainer">
-        <label for="obs" class="inputLabel width100">
-          Observações:
-          <textarea name="obs" id="obs" cols="30" rows="1"></textarea>
+      <div class="dnAndProtocoloWrapper">
+        <div class="obsContainer">
+          <label for="obs" class="inputLabel width100">
+            Observações:
+            <textarea name="obs" id="obs" cols="30" rows="1"></textarea>
+          </label>
+        </div>
+        <label for="ass" class="inputLabel assPaciente">
+            Ass. paciente:
+            <div>_____________________</div>
         </label>
       </div>
     </form>
